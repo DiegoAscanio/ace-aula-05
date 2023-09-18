@@ -105,6 +105,10 @@
   img[alt=grid-img] {
     width: 100%;
   }
+  img[alt=column-img] {
+    display: block;
+    margin: auto;
+  }
 
 </style>
 
