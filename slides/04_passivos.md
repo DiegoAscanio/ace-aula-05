@@ -5,4 +5,4 @@ Elementos passivos de armazenamento de energia são elementos de circuitos elét
 São dois os elementos passivos que são capazes de armazenar energia em um circuito elétrico, sendo eles:
 
 - [Capacitor](#05)
-- [Indutor](#06)
+- [Indutor]()

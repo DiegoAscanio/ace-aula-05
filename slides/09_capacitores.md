@@ -3,8 +3,6 @@
 <div class="grid-50-50 regular">
 <div class="grid-element">
 
-- Frequentemente, representamos capacitores como um conjunto constituído de duas placas metálicas paralelas de área \\(A\\) separadas por um material dielétrico de largura \\(d\\) com constante de permissividade \\(\epsilon\\).
-
 - Quando conectamos uma fonte de tensão contínua aos terminais de um capacitor, seu terminal ligado ao pólo positivo da fonte de tensão acumula cargas \\(q\\) positivas enquanto o terminal ligado ao pólo negativo acumula cargas negativas \\(-q\\). 
 
 - Quando o capacitor atinge seu estado estacionário (final) ele está carregado e possui uma carga total \\(q\\) diretamente proporcional à tensão \\(V\\) aplicada em seus terminais.
@@ -16,10 +14,8 @@
 </div>
 <div class="grid-element">
 
-<!-- _class: transparent -->
-![column-img](./img/capacitor.png)
+![column-img](https://i.pinimg.com/originals/a2/20/ed/a220edbaef6a92efef6a7913eecb6a06.gif)
 
-![column-img](./img/capacitor-2.png)
 
 </div>
 </div>

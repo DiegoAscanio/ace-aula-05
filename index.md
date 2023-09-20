@@ -110,6 +110,7 @@
     margin: auto;
   }
 
+
 </style>
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -152,20 +153,70 @@ Elementos passivos de armazenamento de energia são elementos de circuitos elét
 São dois os elementos passivos que são capazes de armazenar energia em um circuito elétrico, sendo eles:
 
 - [Capacitor](#05)
-- [Indutor](#06)
+- [Indutor]()
 
 
 ---
 
 ## Capacitor
 
-O capacitor é um elemento passivo de circuitos elétricos projetado para armazenar energia através de seu campo elétrico. 
+O capacitor é um componente elétrico que extrai energia de uma fonte (uma bateria por exemplo) e armazena (acumula) esta energia para libertá-la em um grande fluxo que esta fonte não seria capaz de prover. Isto ocorre porque os capacitores são capazes de acumular uma grande quantidade de carga elétrica.
 
-Pode ser utilizado em momentos em que é necessário uma grande quantidade de energia por um curto período de tempo no qual a fonte de tensão presente no circuito é incapaz de fornecer (Como por exemplo, para o disparo do flash de uma câmera fotográfica analógica).
+![column-img](https://i.pinimg.com/originals/a2/20/ed/a220edbaef6a92efef6a7913eecb6a06.gif)
 
-São amplamente utilizados em equipamentos eletrônicos e em aplicações computacionais para estabilizar tensões, filtrar sinais, acumular energia para fornecer a aplicações que a necessitem (em um curto período de tempo), dentre outros usos.
+
+
+
+---
+
+## Capacitor
+
+<div class="normal">
+
+O disparo do flash de uma câmera analógica demanda um grande fluxo de energia que uma fonte convencional não é capaz de fornecer. O capacitor, por acumular cargas, é capaz de proporcionar este fluxo, ainda que em um curtíssimo espaço de tempo.
+
+
+<center>
+<figure>
+<img src="https://bp2.blogger.com/_1-RkxrYZ3JM/R0Y0kOvyVnI/AAAAAAAAAFc/mV_uXzjFbv8/w1200-h630-p-k-no-nu/flash+capacitor.jpg" width="40%">
+<figcaption title="centered">
+Capacitor em uma câmera fotográfica Cannon
+</figcaption>
+</figure>
+</center>
+
+</div>
+
+
+---
+
+## Capacitor
+
+Os capacitores são amplamente utilizados em equipamentos eletrônicos e em aplicações computacionais para estabilizar tensões, filtrar sinais, acumular energia, dentre outros usos.
 
 Apesar de armazenarem energia, não podem ser usados como baterias. Por que?
+
+<!-- Porque os tempos em que liberam a energia armazenada são extremamente curtos, sendo incapazes de fornecer um fluxo de energia constante como o das baterias -->
+
+
+
+---
+
+## Capacitor
+
+<div class="grid-50-50 normal">
+<div class="grid-element">
+
+- Frequentemente, representamos capacitores como um conjunto constituído de duas placas metálicas paralelas de área \\(A\\) separadas por um material dielétrico de largura \\(d\\) com constante de permissividade \\(\epsilon\\).
+
+</div>
+<div class="grid-element">
+
+<!-- _class: transparent -->
+![column-img](./img/capacitor.png)
+
+</div>
+</div>
 
 
 ---
@@ -174,8 +225,6 @@ Apesar de armazenarem energia, não podem ser usados como baterias. Por que?
 
 <div class="grid-50-50 regular">
 <div class="grid-element">
-
-- Frequentemente, representamos capacitores como um conjunto constituído de duas placas metálicas paralelas de área \\(A\\) separadas por um material dielétrico de largura \\(d\\) com constante de permissividade \\(\epsilon\\).
 
 - Quando conectamos uma fonte de tensão contínua aos terminais de um capacitor, seu terminal ligado ao pólo positivo da fonte de tensão acumula cargas \\(q\\) positivas enquanto o terminal ligado ao pólo negativo acumula cargas negativas \\(-q\\). 
 
@@ -188,10 +237,8 @@ Apesar de armazenarem energia, não podem ser usados como baterias. Por que?
 </div>
 <div class="grid-element">
 
-<!-- _class: transparent -->
-![column-img](./img/capacitor.png)
+![column-img](https://i.pinimg.com/originals/a2/20/ed/a220edbaef6a92efef6a7913eecb6a06.gif)
 
-![column-img](./img/capacitor-2.png)
 
 </div>
 </div>
@@ -206,7 +253,7 @@ Apesar de armazenarem energia, não podem ser usados como baterias. Por que?
 
 - Pela equação da carga de um capacitor \\((q = CV)\\), verificamos que a capacitância é dada pela razão entre a carga que um capacitor armazena e a diferença de potencial aplicada a seus terminais: \\(C = {{q} \over {V}}\\).
 
-- Entretanto, a capacitância não depende de \\(q\\) ou \\(v\\), mas sim, das dimensões — área \\((A)\\) das placas e a distância \\((d)\\) entre elas — e propriedades físicas — \\((\epsilon) \rightarrow \\) constante de permissividade do material dielétrico entre as placas — do capacitor, onde:
+- Entretanto, a capacitância (em capacitores paralelos) não depende de \\(q\\) ou \\(v\\), mas sim, das dimensões — área \\((A)\\) das placas e a distância \\((d)\\) entre elas — e propriedades físicas — \\((\epsilon) \rightarrow \\) constante de permissividade do material dielétrico entre as placas — do capacitor, onde:
 
 \\[C = {{\epsilon A} \over {d}}\\]
 
