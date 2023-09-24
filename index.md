@@ -494,13 +494,13 @@ W = 0.5 C v^{2}
 
 ---
 
-# Determinação da corrente, tensão, potência e energia para um capacitor
+### Determinação da corrente, tensão, potência e energia para um capacitor
 
 <iframe src="https://diegoascanio.github.io/jupyterlite/lab?path=capacitor-6.4.ipynb" width=100% height=100%></iframe> 
 
 
 ---
 
-# Determinação da tensão, potência e energia causadas em um capacitor por um pulso triangular de corrente
+### Determinação da tensão, potência e energia causadas em um capacitor por um pulso triangular de corrente
 
 <iframe src="https://diegoascanio.github.io/jupyterlite/lab?path=capacitor-6.5.ipynb" width=100% height=100%></iframe> 
