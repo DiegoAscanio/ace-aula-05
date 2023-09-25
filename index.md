@@ -134,8 +134,7 @@ CEFET-MG DIGDDV - Divinópolis, 2023.
 2. Capacitores
 3. Indutores
 4. Combinações de Capacitores e Indutores em Série e em Paralelo
-5. Indutância Mútua
-6. Lista de Exercícios
+5. Lista de Exercícios
 
 
 ---
@@ -504,3 +503,339 @@ W = 0.5 C v^{2}
 ### Determinação da tensão, potência e energia causadas em um capacitor por um pulso triangular de corrente
 
 <iframe src="https://diegoascanio.github.io/jupyterlite/lab?path=capacitor-6.5.ipynb" width=100% height=100%></iframe> 
+
+
+---
+
+## Indutor 
+
+<div class="regular">
+
+O indutor é um componente elétrico que se opõe a qualquer alteração na corrente elétrica de um sistema. Ele extrai (de forma momentânea) energia de uma fonte (uma bateria por exemplo) e armazena esta energia para, dentre várias aplicações, estabilizar a corrente elétrica de um circuito, quando alcançado o estado estacionário do sistema, na ocasião em que ocorram perturbações que levem a alteração desta grandeza.
+
+</div>
+
+<center>
+
+<iframe width="545" height="409" src="https://www.youtube.com/embed/VFPwgjGHqFQ" title="How Inductors Work Within a Circuit - Inductance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</center>
+
+
+---
+
+## Indutor
+
+<div class="normal">
+
+Veremos, ao longo do curso, múltiplas aplicações dos indutores e sua grande utilidade em circuitos elétricos, mas, de imediato, podemos apontar que através do princípio da indutância, torna-se possível construir eletroimãs (uma das apliações dos indutores) que são bastante úteis para o funcionamento de motores, relés (chaves liga-desliga de circuito acionadas por sinais elétricos), fechaduras, transformadores, dentre outras aplicações.
+
+</div>
+
+<center>
+<iframe width="178" height="316" src="https://www.youtube.com/embed/axxS99ddgVU" title="How to Make Electromagnet At Home |  How to Make Electric Magnet #shorts #electromagnet #science" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+
+---
+
+## Indutor
+
+<div class="grid-50-50 regular">
+<div class="grid-element">
+
+Um indutor é constituído por um fio condutor em espiral enrolado em um núcleo de suporte cujo material pode apresentar propriedades magnéticas ou não-magnéticas. O comportamento dos indutores é baseado em fenômenos associados a campos magnéticos, que são originados por cargas em movimento (ou corrente elétrica) no próprio indutor.
+
+<figure>
+
+<!-- _class: transparent -->
+![column-img](./img/indutor-1.png)
+
+<figcaption style="text-align: center;">Exemplo de indutor</figcaption>
+</figure>
+
+</div>
+<div class="grid-element">
+
+Todo indutor apresenta uma indutância \\(L\\), uma propriedade que determina a quantidade de energia que o indutor pode armazenar no campo magnético que gera para uma dada variação de corrente. É medida em Henries \\((H)\\) e representa a oposição do indutor a qualquer mudança na corrente elétrica que passa por ele.
+
+Por possuir um condutor enrolado em espiral, o indutor é representado como uma espiral nos diagramas de circuitos elétricos, como na figura abaixo:
+
+<figure>
+
+![column-img](./img/indutor-diagrama.png)
+
+<figcaption style="text-align: center;">Representação de Indutores em diagramas de Circuitos Elétricos</figcaption>
+</figure>
+
+</div>
+</div>
+
+
+---
+
+## Indutor
+
+<div class="grid-50-50 small">
+<div class="grid-element">
+
+<!-- _class: transparent -->
+![column-img](./img/indutor-diagrama.png)
+
+Quando uma corrente elétrica passa no indutor, o indutor apresenta tensão se e somente se ocorre uma variação na corrente elétrica que circula nele e esta tensão é diretamente proporcional à taxa da variação desta corrente:
+
+\\[
+V \propto {{di} \over {dt}}
+\\]
+
+Desta proporcionalidade, podemos extrair uma constante, atrelada a cada indutor e esta constante é a própria indutância \\(L\\) do indutor. Assim, temos que a tensão de um indutor é dada por:
+
+\\[
+V = L {{di} \over {dt}}
+\\]
+
+</div>
+<div class="grid-element">
+<figure>
+
+<!-- _class: transparent -->
+![column-img](./img/indutores.png)
+
+<figcaption style="text-align: center;">Múltiplos tipos de Indutores</figcaption>
+</figure>
+
+Como visto na imagem acima, existem diversos tipos de indutores e cada qual destes tipos, apresenta propriedades físicas distintas. Destas propriedades é que se origina a indutância do indutor e, no caso de um indutor de núcleo de ferro na forma de um solenóide, a indutância \\(L\\) é dada por:
+
+<div class="grid-50-50">
+<div class="grid-element">
+
+<!-- _class: transparent -->
+![column-img](./img/indutor-2.png)
+
+</div>
+<div class="grid-element">
+
+\\[
+L = {{\mu N^{2} A} \over {l}}
+\\]
+
+\\[
+\text{Onde: }
+\begin{cases}
+\mu \rightarrow \text{Permeabilidade do núcleo} \\\\
+N \rightarrow \text{Número de Espiras do Indutor} \\\\
+l \rightarrow \text{Comprimento do Indutor} \\\\
+A \rightarrow \text{Área da seção transversal (reta) do núcleo do Indutor}
+\end{cases}
+\\]
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+---
+
+## Indutor
+### Grandezas em um Indutor
+
+<div class="grid-50-50 normal">
+<div class="grid-element">
+
+- Tensão:
+\\[
+V = L {{di} \over {dt}}
+\\]
+
+- Corrente:
+\\[
+i = {1 \over L} \int_{t_{0}}^{t}{V(t) dt} + i(t_{0})
+\\]
+
+</div>
+<div class="grid-element">
+
+- Potência:
+\\[
+P = \left( L {{di} \over {dt}} \right) i
+\\]
+
+- Energia
+\\[
+W = {{1} \over {2}} L i^{2}(t) - {{1} \over {2}} L i^{2}(t_{0})
+\\]
+
+Se em \\(t_{0}\\) não circular corrente no indutor:
+\\[
+W = {1 \over 2} L i^{2}
+\\]
+
+</div>
+</div>
+
+
+---
+
+<!-- _class: lead -->
+# Passo Autônomo de Aprendizado
+
+<p style="text-align: center;">
+Exemplo 6.3 ‒ pág. 135 8ª ed. Circuitos Elétricos Nilsson Riedel ‒ Determinação da Corrente, Tensão, Potência e Energia Para um Indutor.
+</p>
+
+
+---
+
+## Relação Entre Indutores e Capacitores
+
+<div class="grid-50-50 normal">
+<div class="grid-element">
+
+- Ambos elementos são passivos de circuitos elétricos e armazenam energia;
+- O capacitor armazena energia potencial elétrica (através de campo elétrico);
+- O indutor armazena energia magnética (através de campo magnético);
+- O capacitor se opõe à variação de tensão;
+    - Por isso, sua tensão não pode variar instantâneamente, ao contrário de sua corrente.
+
+</div>
+<div class="grid-element">
+
+- O indutor se opõe à variação de corrente;
+    - Por isso, sua corrente não pode variar instantâneamente, ao contrário de sua tensão.
+- Sob uma tensão contínua o capacitor funciona como uma malha aberta (chave aberta);
+- Sob uma tensão contínua o indutor funciona como uma malha fechada (curto-circuito);
+
+</div>
+</div>
+
+
+---
+
+<div class="regular">
+
+## Associação de Capacitores
+
+Capacitores em série ou em paralelo podem ser substituidos por um capacitor equivalente. As demonstrações das equações estão presentes na seção 6.3 do livro Circuitos Elétricos 8ª Ed. ‒ NILSSON; RIEDEL.
+
+### Associação de Capacitores em Série.
+
+<div class="grid-50-50">
+<div class="grid-element">
+
+<img class="transparent" style="display: block; margin: auto; width: 62.5%" src="./img/capacitores-serie.png">
+
+</div>
+<div class="grid-element">
+
+\\[
+{{1} \over {C_{\text{eq}}}} = {{{1} \over {C_{1}}} + {{1} \over {C_{2}}} + \cdots + {{1} \over {C_{N}}}}
+\\]
+
+No exemplo, \\(
+C_{\text{eq}} = {1 \over {{1 \over {4 \times 10^{-6}}} + {1 \over {5 \times 10^{-6}}} + {1 \over {6 \times 10^{-6}}}}} \rightarrow C_{\text{eq}} = {60 \over 37} \mu F
+\\)
+
+</div>
+</div>
+
+### Associação de Capacitores em Paralelo.
+
+<div class="grid-50-50">
+<div class="grid-element">
+
+<img class="transparent" style="display: block; margin: auto; width: 60%" src="./img/capacitores-paralelo.png">
+
+</div>
+<div class="grid-element">
+
+\\[
+C_{\text{eq}} = C_{1} + C_{2} + \cdots + C_{N}
+\\]
+
+No exemplo, \\(
+C_{\text{eq}} = (4 + 5 + 6) \mu F \rightarrow C_{\text{eq}} = 15 \mu F
+\\)
+
+</div>
+</div>
+
+
+</div>
+
+
+---
+
+<div class="regular">
+
+## Associação de Indutores
+
+Indutores em série ou em paralelo podem ser substituidos por um indutor equivalente. As demonstrações das equações estão presentes na seção 6.3 do livro Circuitos Elétricos 8ª Ed. ‒ NILSSON; RIEDEL.
+
+### Associação de Indutores em Série.
+
+<div class="grid-50-50">
+<div class="grid-element">
+
+<img class="transparent" style="display: block; margin: auto; width: 62.5%" src="./img/indutores-serie.png">
+
+</div>
+<div class="grid-element">
+
+\\[
+L_{\text{eq}} = L_{1} + L_{2} + \cdots + L_{N}
+\\]
+
+No exemplo, \\(
+L_{\text{eq}} = (4 + 5 + 6) \mu H \rightarrow L_{\text{eq}} = 15 \mu H
+\\)
+
+</div>
+</div>
+
+### Associação de Indutores em Paralelo.
+
+<div class="grid-50-50">
+<div class="grid-element">
+
+<img class="transparent" style="display: block; margin: auto; width: 60%" src="./img/indutores-paralelo.png">
+
+</div>
+<div class="grid-element">
+
+$$
+{{1} \over {L_{\text{eq}}}} = {{{1} \over {L_{1}}} + {{1} \over {L_{2}}} + \cdots + {{1} \over {L_{N}}}}
+$$
+
+No exemplo, 
+
+$$
+L_{\text{eq}} = {1 \over {{1 \over {4 \times 10^{-6}}} + {1 \over {5 \times 10^{-6}}} + {1 \over {6 \times 10^{-6}}}}} \rightarrow L_{\text{eq}} = {60 \over 37} \mu H
+$$
+
+
+</div>
+</div>
+
+</div>
+
+
+---
+
+## Lista de Exercícios 4
+
+Problemas Ímpares das Seções 6.1, 6.2 e 6.3 do livro Circuitos Elétricos 8ª Edição NILSSON; RIEDEL.
+
+
+---
+
+<div class="cabecalho large">
+Referências Bibliográficas
+</div>
+<div class="conteudo normal">
+
+- RIEDEL, SUSAN A.; NILSSON, James W. - Circuitos Elétricos 8ª ed. 2009.
+
+</div>

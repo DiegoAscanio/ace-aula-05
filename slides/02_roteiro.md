@@ -4,5 +4,4 @@
 2. Capacitores
 3. Indutores
 4. Combinações de Capacitores e Indutores em Série e em Paralelo
-5. Indutância Mútua
-6. Lista de Exercícios
+5. Lista de Exercícios
